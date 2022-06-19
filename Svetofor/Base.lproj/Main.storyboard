@@ -33,19 +33,16 @@
                                     <action selector="actionButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="PQf-lj-sYq"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ohU-Hi-JnE">
-                                <rect key="frame" x="131" y="147" width="152" height="151"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohU-Hi-JnE">
+                                <rect key="frame" x="135.5" y="147" width="143" height="151"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J10-sD-G4Q">
-                                <rect key="frame" x="131" y="326" width="152" height="151"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J10-sD-G4Q">
+                                <rect key="frame" x="135.5" y="326" width="143" height="151"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="okh-iZ-3TG">
-                                <rect key="frame" x="131" y="505" width="152" height="151"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="okh-iZ-3TG">
+                                <rect key="frame" x="135.5" y="505" width="143" height="151"/>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                                 <color key="tintColor" systemColor="systemTealColor"/>
                             </view>
@@ -53,7 +50,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
+                            <constraint firstItem="J10-sD-G4Q" firstAttribute="leading" secondItem="ohU-Hi-JnE" secondAttribute="leading" id="1Sm-un-4pz"/>
                             <constraint firstItem="reZ-yo-hvZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4PF-D0-69T"/>
+                            <constraint firstItem="reZ-yo-hvZ" firstAttribute="top" secondItem="okh-iZ-3TG" secondAttribute="bottom" constant="55" id="FuZ-Tw-WnL"/>
+                            <constraint firstItem="J10-sD-G4Q" firstAttribute="trailing" secondItem="okh-iZ-3TG" secondAttribute="trailing" id="J4t-q7-OZ0"/>
+                            <constraint firstItem="okh-iZ-3TG" firstAttribute="top" secondItem="J10-sD-G4Q" secondAttribute="bottom" constant="28" id="QHi-j5-7qQ"/>
+                            <constraint firstItem="ohU-Hi-JnE" firstAttribute="height" secondItem="J10-sD-G4Q" secondAttribute="height" id="Zos-fm-8Up"/>
+                            <constraint firstItem="ohU-Hi-JnE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="103" id="aM3-5f-0ML"/>
+                            <constraint firstItem="okh-iZ-3TG" firstAttribute="width" secondItem="ohU-Hi-JnE" secondAttribute="width" id="buO-EH-Z6w"/>
+                            <constraint firstItem="ohU-Hi-JnE" firstAttribute="centerX" secondItem="reZ-yo-hvZ" secondAttribute="centerX" id="cV3-CX-cJ6"/>
+                            <constraint firstItem="J10-sD-G4Q" firstAttribute="leading" secondItem="okh-iZ-3TG" secondAttribute="leading" id="d3h-p0-wIb"/>
+                            <constraint firstItem="okh-iZ-3TG" firstAttribute="height" secondItem="ohU-Hi-JnE" secondAttribute="height" id="dk8-ub-aoK"/>
+                            <constraint firstItem="okh-iZ-3TG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135.33333333333331" id="gaO-rG-Amp"/>
+                            <constraint firstItem="J10-sD-G4Q" firstAttribute="top" secondItem="ohU-Hi-JnE" secondAttribute="bottom" constant="28" id="shx-qR-A7o"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="reZ-yo-hvZ" secondAttribute="bottom" constant="97" id="vmj-Ub-Kxw"/>
                         </constraints>
                     </view>

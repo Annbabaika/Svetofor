@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var greenSignalView: UIView!
     
     @IBOutlet var actionButton: UIButton!
+    
     private var count = 0
     
     override func viewDidLoad() {
@@ -21,7 +22,6 @@ class ViewController: UIViewController {
         
         redSignalView.layer.cornerRadius = 75
         redSignalView.alpha = 0.3
-        redSignalView.backgroundColor = .red
         yellowSignalView.layer.cornerRadius = 75
         yellowSignalView.alpha = 0.3
         greenSignalView.layer.cornerRadius = 75
@@ -33,6 +33,7 @@ class ViewController: UIViewController {
     
     @IBAction func actionButtonTapped() {
         actionButton.setTitle("NEXT", for: .normal)
+        
         switch count {
         case 0:
             redSignalView.alpha = 1
